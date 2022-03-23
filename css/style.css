@@ -41,6 +41,7 @@ header{
     width: 100%;
     align-items: center;
     justify-content: center;
+    background-color:#000;
 }
 header img{
     position: relative;
@@ -53,25 +54,255 @@ header h1{
     left: -7rem;
     width: 50rem;
     text-align: center;
+    color: #fff;
 }
 body{
     text-align: center;
     margin: auto;
+    background-color: #333;
 }
 main section ul{
-    display:grid;
+    display: grid;
     gap: 1rem;
     grid-template-columns: repeat(4,1fr);
-    margin: auto;
+    margin: 2rem auto;
 } 
 section{
-    width: 50vw;
-    height: 50vw;
+    max-width: 80rem;
     margin: auto;
+}
+section li img{
+    height: 27rem;
+    width: 20rem;
 }
 section h2{
     margin: 1rem;
+    color: #fff;
 }
 section p{
-    margin: 1rem; 
+    color:#fff  
 }
+footer *{
+    text-align: center;
+    font-size: small;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    color: #fff;
+}
+section a{
+    display: block;
+    margin: 2rem auto;
+    max-width: 15rem;
+    padding: 2rem;
+    background-color: rgb(188, 18, 1);
+    border-radius: 2rem;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+section a:hover{
+    transform: scale(1.1);
+}
+.warning{
+    background-color: rgba(218, 13, 13, 1);
+    text-align: center;
+    line-height: 3.5rem;
+    color: #fff;
+    font-weight: 400;
+    font-style: 2rem;
+    display: none;
+    border-radius: .7rem;
+    margin-bottom: 2rem;
+}
+
+.show-warning{
+    display: block;
+}
+
+main .forma {
+    max-width: 80rem;
+    margin: 5rem auto 0;
+    padding: 2rem;
+    
+}
+ul figure{
+    position: relative;
+}
+ul figure .material-icons{
+    vertical-align: -.4rem;
+}
+/* Overley effect */
+ul figure figcaption{
+    display: grid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.6);
+    align-items: center;
+    transform: scale(0);
+    transition: all 500ms ease-in-out;
+    transform-origin: center center;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+}
+ul figure:hover figcaption{
+    transform: scale(1);
+}
+/* modale */
+.parent-modale{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+}
+.parent-modale .modale{
+    max-width: 80rem;
+    padding: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.6);
+    z-index: 2;
+    cursor: pointer;
+    
+    
+}
+.parent-modale .modale .desc{
+    position: static;
+    transition: none;
+    background-color: #fff;
+    color: #222;
+    
+}
+.parent-modale .modale img{
+    width: 100%;
+    height: 80vh;
+    border-radius: .5rem .5rem 0 0;
+    min-height: 80vh;
+}
+.modale-active{
+    z-index: 1;
+    opacity: 1;
+    transform-origin: center center;
+}
+.parent-modale .modale .desc h3{
+    font-size: x-large;
+    font-weight: 400;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+}
+.parent-modale .modale .desc p :is(time){
+    padding: 1rem;
+}
+.parent-modale .modale button{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    z-index: 2;
+    color: #333;
+    cursor: pointer;
+}
+
+label{
+    color: #fff;
+}
+form *{
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .9rem;
+	text-transform: capitalize;
+}
+form fieldset{
+	border: none;
+	margin: 2rem auto;
+	padding: 2rem 0;
+}
+form label{
+	display: block;
+	padding: 1rem 0rem;
+	color: #fff;
+	text-shadow: var(--secondary) .25rem .25rem 0rem;
+	font-weight: bold;
+	font-size: 2rem;
+}
+fieldset legend{
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+	text-shadow: var(--secondary) .25rem .25rem 0, var(--tertiare) .5rem .5rem 0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2.5rem;	
+}
+form input[type="submit"]{
+	display: block;
+	margin: 2rem auto;
+	padding: 1.5rem;
+	border-radius: .5rem;
+	text-align: center;
+	background-color: #fff;
+	width: 100%;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bolder;
+}
+form input:focus, form select:focus{
+	box-shadow: 0 0 .7rem var(--tertiare);
+	border: solid .2rem var(--tertiare);
+	outline: none;
+}
+
+form select{
+	display: block;
+	height: 100%;
+	width: 100%;
+	padding: 1rem 0.5rem;
+	border-radius: .5rem;
+	color: #333;
+	background-color: #cccccc;
+	border: solid .2rem var(--default);
+}
+form select option{
+	display: block;
+	padding: 1rem 0rem;
+	border-radius: .5rem;
+}
+[placeholder]{
+    text-transform: capitalize;
+}
+fieldset button{
+    color:#333;
+    background-color: #cccccc;
+    border-radius: 5rem;
+    max-width: 12rem;
+    margin: 0 auto;
+    transition: all 0.2s ease-in-out;
+}
+fieldset button:hover{
+    box-shadow: 0 0 1.5rem #ffffff;
+}
+input, textarea, select {
+    padding: 1.8rem;
+    width: 100%;
+    font-size: 1.5rem;
+    resize: none;
+    color: var(--color-default);
+    border-radius: 1rem;
+    margin: 0 0 2rem;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
