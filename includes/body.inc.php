@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
-    <title>Netflex</title>
-</head>
-
-<body>
-    <header>
-        <img src="./asset/logo.png" alt="">
-        <h1>Maison Des Ligues<br>Tous Les Sports</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Prêt à la compétition? Remplissez le formulaire proposé dans cette page</h2>
-            <p>Tous les mois profitez de toutes les nouveautés et opportunités. A partir du mois prochain on vous propose toutes les séance de sport sur vos support préférés!</p>
-            <ul class="grid-picture-large">
+<ul class="grid-picture-large">
                 <li 
                     data-image="./asset/basket.webp" 
                     data-title="Girl" 
@@ -325,16 +305,8 @@
                 </li>
 
             </ul>
-            <a href="./formulaire.html">Commencer</a>
-        </section>
- 
-    </main>
 
-    <footer>
-            <p>&copy; - Rédan - 2022</p>
-    </footer>
-
-    <div class="parent-modale" role="dialog">
+                <div class="parent-modale" role="dialog">
         <figure class="modale">
             <button aria-label="closed">
                 <span class="material-icons">clear</span>
@@ -348,6 +320,6 @@
             </figcaption>
         </figure>
     </div>
-    <script src="./js/app.js"></script>
-</body>
-</html>
+            <a href="formulaire.php">Commencer</a>
+        </section>
+        <script src="./js/app.js"></script>

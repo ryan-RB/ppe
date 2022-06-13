@@ -16,12 +16,9 @@ document.addEventListener("DOMContentLoaded", e => {
                 form.info.push(this.first_name.value, this.last_name.value, this.date.value, this.phone.value);
                 localStorage.setItem('User', JSON.stringify(form.info));
                 form.warning.classList.remove("show-warning");
-                form.warning.classList.add("success");
-                form.warning.innerText = "Le formulaire à été rempli avec succès!";
             } else {
                 form.warning.classList.add("show-warning");
                 form.warning.innerText = "Veuillez remplir les champs vides.";
-                form.warning.classList.remove("success");
             }
         }
     };
@@ -30,6 +27,6 @@ document.addEventListener("DOMContentLoaded", e => {
 
     form.btn_validation.addEventListener("click", e => {
         e.preventDefault();
-        form.control();
+        
     });
 });

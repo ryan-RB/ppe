@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
-    <title>Netflex</title>
-</head>
-
-<body>
-    <header>
-        <img src="./asset/logo.png" alt="">
-        <h1>Maison Des Ligues<br>Tous Les Sports</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Prêt à la compétition? Remplissez le formulaire proposé dans cette page</h2>
-            <p>Tous les mois profitez de toutes les nouveautés et opportunités. A partir du mois prochain on vous propose toutes les séance de sport sur vos support préférés!</p>
-    <ul class="grid-picture-large">
+<ul class="grid-picture-large">
         <li 
             data-image="./asset/KARATE.jpg" 
             data-title="Girl" 
@@ -101,25 +81,27 @@
         <p class="warning">
             Warning
         </p>
-
+        
         <fieldset>
             <legend>Inscrivez vous!</legend>
-            <form action="index.html" method="post">
+            <form action="" method="post">
                 <label for="nom">Nom</label>
-                <input type="text" id="nom" name="nom" placeholder="Nom" aria-required="true"  autofocus>
+                <input type="text" id="nom" name="nom" placeholder="Nom" aria-required="true"  autofocus required>
 
                 <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" name="prenom" placeholder="Prénom" aria-required="true">
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom" aria-required="true" required>
 
                 <label for="date">Date de naissance</label>
-                <input type="date" id="date" name="date" aria-required="true">
+                <input type="date" id="date" name="date" aria-required="true" required>
     
                 <label for="phone">Votre Téléphone</label>
+                <input type="tel" id="phone" name="phone" aria-label="format à 10 chiffre" placeholder="Téléphone" aria-required="true" required>
 
-                <input type="tel" id="phone" name="phone" aria-label="format à 10 chiffre" placeholder="Téléphone" aria-required="true">
+                <label for="mail">E-Mail</label>
+                <input type="email" id="mail" name="mail" placeholder="E-Mail" aria-required="true" required>
 
                 <label for="pays">Localisation</label>
-                <select id="pays" name="pays">
+                <select id="pays" name="pays" required>
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Åland Islands">Åland Islands</option>
                     <option value="Albania">Albania</option>
@@ -365,18 +347,55 @@
                     <option value="Zambia">Zambia</option>
                     <option value="Zimbabwe">Zimbabwe</option>
                 </select>
-            
-                <button type="submit" value="Envoyer" aria-label="Cliquez pour envoyer">Envoyer</button>
-           
+
+                <input type="submit" name="valider" value="Envoyer">
          </form>
+         <?php
+            include_once 'includes/db_connect.inc.php';
+            print'hall';
+            try { 
+                if(isset($_POST['valider']) && isset($_POST["nom"]) && isset($_POST['prenom']) && isset($_POST['date']) && isset($_POST['pays']) && isset($_POST['mail']) && isset($_POST['phone']))
+                {
+                    print'tabaiasdasdazhjdain';
+                    $_nom = $_POST["nom"];
+                    $_prenom = $_POST["prenom"];
+                    $_date = $_POST["date"];
+                    $_pays = $_POST["pays"];
+                    $_email = $_POST["mail"];
+                    $_phone = $_POST["phone"];
+
+                    var_dump($_nom);
+                    
+                    print $_nom;
+                    print $_prenom;
+                    print $_date;
+                    print $_pays;
+                    print $_email;
+                    print $_phone;
+
+
+                    $_req = $_bdd->prepare('INSERT INTO client(nom, prenom, date, email, tel, localisation) VALUES(:nom, :prenom, :date, :email, :tel, :localisation)');
+                    $_req -> execute(array(
+                        'nom' => $_nom,
+                        'prenom' => $_prenom,
+                        'date' => $_date,
+                        'tel' => $_phone,
+                        'email' => $_email,
+                        'localisation' => $_pays,
+                    ));
+
+                        
+                    
+                }
+                else{
+                    echo "<p class=\"warning\"> Veuillez remplir tous les champs.</p>"; 
+                }
+            }
+            catch(PDOException $e) {
+                echo $e->getMessage();
+            }    
+        ?>
     </fieldset>
     </div>
 </section>
 
-</main>
-<footer>
-    <p>&copy; - Rédan - 2022</p>
-</footer>
-<script src="./js/form.js"></script>
-</body>
-</html>
