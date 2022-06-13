@@ -253,9 +253,8 @@ form input[type="submit"]{
 	padding: 1.5rem;
 	border-radius: .5rem;
 	text-align: center;
-	background-color: #fff;
+	background-color: rgb(33, 186, 46);
 	width: 100%;
-	color: #fff;
 	cursor: pointer;
 	font-weight: bolder;
 }

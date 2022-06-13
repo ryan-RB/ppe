@@ -100,6 +100,9 @@
                 <label for="mail">E-Mail</label>
                 <input type="email" id="mail" name="mail" placeholder="E-Mail" aria-required="true" required>
 
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" placeholder="Mot de passe" aria-required="true" required>
+
                 <label for="pays">Localisation</label>
                 <select id="pays" name="pays" required>
                     <option value="Afghanistan">Afghanistan</option>
@@ -349,42 +352,32 @@
                 </select>
 
                 <input type="submit" name="valider" value="Envoyer">
+                <a href="connect.php">Connexion</a>
          </form>
          <?php
             include_once 'includes/db_connect.inc.php';
-            print'hall';
             try { 
-                if(isset($_POST['valider']) && isset($_POST["nom"]) && isset($_POST['prenom']) && isset($_POST['date']) && isset($_POST['pays']) && isset($_POST['mail']) && isset($_POST['phone']))
+                if(isset($_POST['valider']) && isset($_POST["nom"]) && isset($_POST['prenom']) && isset($_POST['date']) && isset($_POST['pays']) && isset($_POST['mail']) && isset($_POST['password']) && isset($_POST['phone']))
                 {
-                    print'tabaiasdasdazhjdain';
                     $_nom = $_POST["nom"];
                     $_prenom = $_POST["prenom"];
                     $_date = $_POST["date"];
                     $_pays = $_POST["pays"];
                     $_email = $_POST["mail"];
+                    $_password = $_POST["password"];
                     $_phone = $_POST["phone"];
 
-                    var_dump($_nom);
-                    
-                    print $_nom;
-                    print $_prenom;
-                    print $_date;
-                    print $_pays;
-                    print $_email;
-                    print $_phone;
-
-
-                    $_req = $_bdd->prepare('INSERT INTO client(nom, prenom, date, email, tel, localisation) VALUES(:nom, :prenom, :date, :email, :tel, :localisation)');
+                    $_req = $_bdd->prepare('INSERT INTO client(nom, prenom, date, email, password, tel, localisation) VALUES(:nom, :prenom, :date, :email, :password, :tel, :localisation)');
                     $_req -> execute(array(
                         'nom' => $_nom,
                         'prenom' => $_prenom,
                         'date' => $_date,
                         'tel' => $_phone,
                         'email' => $_email,
+                        'password' => $_password,
                         'localisation' => $_pays,
                     ));
-
-                        
+   
                     
                 }
                 else{

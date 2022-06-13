@@ -1,8 +1,9 @@
+<a href="index.php">Accueil</a>
 <ul class="grid-picture-large">
                 <li 
                     data-image="./asset/basket.webp" 
                     data-title="Girl" 
-                    data-description="c'est un film épatant, entre action et émotion..." 
+                    data-description="Mettez vos plus beaux paniers!" 
                     data-dates="02/01/2020">
                         <figure>
                             <img src="./asset/basket.webp" alt="basket">
@@ -11,7 +12,7 @@
                                         <i class="material-icons" aria-hidden="true">
                                             pages
                                         </i>
-                                        Agrandir
+                                        Consulter
                                             
                                     </h2>
                             </figcaption>
@@ -20,8 +21,8 @@
                 </li>
                 <li 
                     data-image="./asset/boxe.jpg" 
-                    data-title="Girl" 
-                    data-description="c'est un film épatant, entre action et émotion..." 
+                    data-title="Boxe" 
+                    data-description="Enfilez vos gants!" 
                     data-dates="02/01/2020">
                         <figure>
                             <img src="./asset/boxe.jpg" alt="boxe">
@@ -30,7 +31,7 @@
                                         <i class="material-icons" aria-hidden="true">
                                             pages
                                         </i>
-                                        Agrandir
+                                        Consulter
                                             
                                     </h2>
                             </figcaption>
@@ -39,8 +40,8 @@
                 </li>
                 <li 
                     data-image="./asset/baseball.webp" 
-                    data-title="Girl" 
-                    data-description="c'est un film épatant, entre action et émotion..." 
+                    data-title="Baseball" 
+                    data-description="Mieux que sur Wii sports!" 
                     data-dates="02/01/2020">
                         <figure>
                             <img src="./asset/baseball.webp" alt="baseball">
@@ -49,7 +50,7 @@
                                         <i class="material-icons" aria-hidden="true">
                                             pages
                                         </i>
-                                        Agrandir
+                                        Consulter
                                             
                                     </h2>
                             </figcaption>
@@ -58,8 +59,8 @@
                 </li>
                 <li 
                     data-image="./asset/course.jpg" 
-                    data-title="Girl" 
-                    data-description="c'est un film épatant, entre action et émotion..." 
+                    data-title="Course" 
+                    data-description="À vos marques... Prêt?" 
                     data-dates="02/01/2020">
                         <figure>
                             <img src="./asset/course.jpg" alt="course">
@@ -68,7 +69,7 @@
                                         <i class="material-icons" aria-hidden="true">
                                             pages
                                         </i>
-                                        Agrandir
+                                        Consulter
                                             
                                     </h2>
                             </figcaption>
@@ -77,8 +78,8 @@
                 </li>
                 <li 
                     data-image="./asset/dance.jpg" 
-                    data-title="Girl" 
-                    data-description="c'est un film épatant, entre action et émotion..." 
+                    data-title="Dance" 
+                    data-description="Mieux que sur Just Dance!" 
                     data-dates="02/01/2020">
                         <figure>
                             <img src="./asset/dance.jpg" alt="dance">
@@ -87,7 +88,7 @@
                                         <i class="material-icons" aria-hidden="true">
                                             pages
                                         </i>
-                                        Agrandir
+                                        Consulter
                                             
                                     </h2>
                             </figcaption>
@@ -96,8 +97,8 @@
                 </li>
                 <li 
                     data-image="./asset/escrime.jpg" 
-                    data-title="Girl" 
-                    data-description="c'est un film épatant, entre action et émotion..." 
+                    data-title="Escrime" 
+                    data-description="ça va ça fait pas vraiment mal." 
                     data-dates="02/01/2020">
                         <figure>
                             <img src="./asset/escrime.jpg" alt="escrime">
@@ -106,7 +107,7 @@
                                         <i class="material-icons" aria-hidden="true">
                                             pages
                                         </i>
-                                        Agrandir
+                                        Consulter
                                             
                                     </h2>
                             </figcaption>
@@ -115,8 +116,8 @@
                 </li>
                 <li 
                     data-image="./asset/KARATE.jpg" 
-                    data-title="Girl" 
-                    data-description="c'est un film épatant, entre action et émotion..." 
+                    data-title="Karaté" 
+                    data-description="Hajimé!" 
                     data-dates="02/01/2020">
                         <figure>
                             <img src="./asset/KARATE.jpg" alt="karaté">
@@ -125,7 +126,7 @@
                                         <i class="material-icons" aria-hidden="true">
                                             pages
                                         </i>
-                                        Agrandir
+                                        Consulter
                                             
                                     </h2>
                             </figcaption>
@@ -134,8 +135,8 @@
                 </li>
                 <li 
                     data-image="./asset/pétanque.jpg" 
-                    data-title="Girl" 
-                    data-description="c'est un film épatant, entre action et émotion..." 
+                    data-title="Pétanque" 
+                    data-description="Le plus important, c'est le cochonnet." 
                     data-dates="02/01/2020">
                         <figure>
                             <img src="./asset/pétanque.jpg" alt="pétanque">
@@ -144,7 +145,7 @@
                                         <i class="material-icons" aria-hidden="true">
                                             pages
                                         </i>
-                                        Agrandir
+                                        Consulter
                                             
                                     </h2>
                             </figcaption>
@@ -153,8 +154,8 @@
                 </li>
                 <li 
                     data-image="./asset/tir.jpg" 
-                    data-title="Girl" 
-                    data-description="c'est un film épatant, entre action et émotion..." 
+                    data-title="Tir" 
+                    data-description="Attention ça fais mal." 
                     data-dates="02/01/2020">
                         <figure>
                             <img src="./asset/tir.jpg" alt="tir">
@@ -163,7 +164,7 @@
                                         <i class="material-icons" aria-hidden="true">
                                             pages
                                         </i>
-                                        Agrandir
+                                        Consulter
                                             
                                     </h2>
                             </figcaption>
@@ -172,8 +173,8 @@
                 </li>
                 <li 
                     data-image="./asset/capoeira.jpg" 
-                    data-title="Girl" 
-                    data-description="c'est un film épatant, entre action et émotion..." 
+                    data-title="Capoeira"
+                    data-description="Tu peux dancer en te battant, la chance." 
                     data-dates="02/01/2020">
                         <figure>
                             <img src="./asset/capoeira.jpg" alt="">
@@ -182,7 +183,7 @@
                                         <i class="material-icons" aria-hidden="true">
                                             pages
                                         </i>
-                                        Agrandir
+                                        Consulter
                                             
                                     </h2>
                             </figcaption>
@@ -191,8 +192,8 @@
                 </li>
                 <li 
                     data-image="./asset/nage.jpg" 
-                    data-title="Girl" 
-                    data-description="c'est un film épatant, entre action et émotion..." 
+                    data-title="Natation" 
+                    data-description="Maillot non fournis." 
                     data-dates="02/01/2020">
                         <figure>
                             <img src="./asset/nage.jpg" alt="">
@@ -201,7 +202,7 @@
                                         <i class="material-icons" aria-hidden="true">
                                             pages
                                         </i>
-                                        Agrandir
+                                        Consulter
                                             
                                     </h2>
                             </figcaption>
@@ -210,8 +211,8 @@
                 </li>
                 <li 
                     data-image="./asset/accrobranche.png" 
-                    data-title="Girl" 
-                    data-description="c'est un film épatant, entre action et émotion..." 
+                    data-title="Accrobranche" 
+                    data-description="C'est pas terrible, choisis une autre activité sinon." 
                     data-dates="02/01/2020">
                         <figure>
                             <img src="./asset/accrobranche.png" alt="">
@@ -220,7 +221,7 @@
                                         <i class="material-icons" aria-hidden="true">
                                             pages
                                         </i>
-                                        Agrandir
+                                        Consulter
                                             
                                     </h2>
                             </figcaption>
@@ -229,8 +230,8 @@
                 </li>
                 <li 
                     data-image="./asset/billard.jpg" 
-                    data-title="Girl" 
-                    data-description="c'est un film épatant, entre action et émotion..." 
+                    data-title="Billard" 
+                    data-description="C'est pas un vrai sport, mais c'est marrant." 
                     data-dates="02/01/2020">
                         <figure>
                             <img src="./asset/billard.jpg" alt="">
@@ -239,7 +240,7 @@
                                         <i class="material-icons" aria-hidden="true">
                                             pages
                                         </i>
-                                        Agrandir
+                                        Consulter
                                             
                                     </h2>
                             </figcaption>
@@ -248,8 +249,8 @@
                 </li>
                 <li 
                     data-image="./asset/lutte.jpg" 
-                    data-title="Girl" 
-                    data-description="c'est un film épatant, entre action et émotion..." 
+                    data-title="Lutte" 
+                    data-description="C'est de la lutte en fait." 
                     data-dates="02/01/2020">
                         <figure>
                             <img src="./asset/lutte.jpg" alt="">
@@ -258,7 +259,7 @@
                                         <i class="material-icons" aria-hidden="true">
                                             pages
                                         </i>
-                                        Agrandir
+                                        Consulter
                                             
                                     </h2>
                             </figcaption>
@@ -267,8 +268,8 @@
                 </li>
                 <li 
                     data-image="./asset/rugby.jpg" 
-                    data-title="Girl" 
-                    data-description="c'est un film épatant, entre action et émotion..." 
+                    data-title="Rugby" 
+                    data-description="C'est du foot mais avec les mains c'est ça?" 
                     data-dates="02/01/2020">
                         <figure>
                             <img src="./asset/rugby.jpg" alt="">
@@ -277,7 +278,7 @@
                                         <i class="material-icons" aria-hidden="true">
                                             pages
                                         </i>
-                                        Agrandir
+                                        Consulter
                                             
                                     </h2>
                             </figcaption>
@@ -286,8 +287,8 @@
                 </li>
                 <li 
                     data-image="./asset/muscu.jpg" 
-                    data-title="Girl" 
-                    data-description="c'est un film épatant, entre action et émotion..." 
+                    data-title="Musculation" 
+                    data-description="Pot de Protéine offert." 
                     data-dates="02/01/2020">
                         <figure>
                             <img src="./asset/muscu.jpg" alt="">
@@ -296,13 +297,15 @@
                                         <i class="material-icons" aria-hidden="true">
                                             pages
                                         </i>
-                                        Agrandir
+                                        Consulter
                                             
                                     </h2>
                             </figcaption>
                             
                     </figure>
                 </li>
+
+                <a href="connect.php">Changer de compte</a>
 
             </ul>
 
